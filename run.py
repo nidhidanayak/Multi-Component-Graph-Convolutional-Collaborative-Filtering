@@ -221,9 +221,9 @@ def main():
     											torch.FloatTensor(r_test))
 
     _train = torch.utils.data.DataLoader(trainset, batch_size = args.batch_size, shuffle = True,
-                                            num_workers = 16, pin_memory = True)
+                                            num_workers = 2, pin_memory = True)
     _test = torch.utils.data.DataLoader(testset, batch_size = args.test_batch_size, shuffle = True, 
-    										num_workers = 16, pin_memory = True)
+    										num_workers = 2, pin_memory = True)
 
     # user part
     u_agg_embed_cmp1 = aggregator(u2e.to(device), i2e.to(device), u_adj, embed_dim, cuda = device,
