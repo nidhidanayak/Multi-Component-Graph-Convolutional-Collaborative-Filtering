@@ -169,7 +169,7 @@ def main():
     parser = argparse.ArgumentParser(description = 'MCCF')
     parser.add_argument('--epochs', type = int, default = 5,
                         metavar = 'N', help = 'number of epochs to train')
-    parser.add_argument('--lr', type = float, default = 0.01,
+    parser.add_argument('--lr', type = float, default = 0.001,
                         metavar = 'FLOAT', help = 'learning rate')
     parser.add_argument('--embed_dim', type = int, default = 64,
                         metavar = 'N', help = 'embedding dimension')
