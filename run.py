@@ -175,7 +175,7 @@ def main():
                         metavar = 'N', help = 'embedding dimension')
     parser.add_argument('--weight_decay', type = float, default = 0.0005,
                         metavar = 'FLOAT', help = 'weight decay')
-    parser.add_argument('--N', type = int, default = 30000,
+    parser.add_argument('--N', type = int, default = 500,
                         metavar = 'N', help = 'L0 parameter')
     parser.add_argument('--droprate', type = float, default = 0.5,
                         metavar = 'FLOAT', help = 'dropout rate')
